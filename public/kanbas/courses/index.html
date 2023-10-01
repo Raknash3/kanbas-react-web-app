@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <!-- First Column: Courses Navigation -->
+            <td style="width: 15%; vertical-align: top;">
+                <h2>Navigation Tabs</h2>
+                <ul>
+                    <li><a href="../profile/index.html">Acccount</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="../home.html">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li><a href="#">Comments</a></li>
+                    <li><a href="#">Help</a></li>
+                    <!-- Add more courses as needed -->
+                </ul>
+            </td>
+
+            <td style="width: 15%; vertical-align: top;">
+                <h2>Course Menu</h2>
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="../assignments/index.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="../grades.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="index.html">Settings</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </td>
+
+            <td style="width: 70%; vertical-align: top;">
+                <br />
+                <table>
+                    <tr>
+                        <td> <a href="index.html">Course Details</a></td>
+                        <td> <a href="#">Sections</a></td>
+                        <td> <a href="navigation.html">Navigation</a></td>
+                        <td> <a href="#">Apps</a></td>
+                        <td> <a href="#">Feature Options</a></td>
+                        <td> <a href="#">Integrations</a></td>
+                    </tr>
+                </table>
+                <br />
+                <h3> Course Details</h3>
+                <table>
+                    <tr>
+                        <td><h4>Image:</h4></td>
+                        <td>
+                            <img src="web_dev.webp"
+                                 height="200px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Name:</h4></td>
+                        <td> CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</td>
+                    </tr>
+                    <tr>
+                        <td> <h4>Course Code:</h4></td>
+                        <td>CS4550.12631.202410</td>
+                    </tr>
+                    <tr>
+                        <td><h4>Blueprint Course:</h4></td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Course Template:</h3></td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="courseTemplate" value="courseTemplateEnabled" />
+                                Enable course as course template
+                            </label>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Time Zone:</h4></td>
+                        <td>
+                            <select>
+                                <option value="EST">Eastern Time (US & Canada)(-5:00/-4:00) </option>
+                                <option value="PT">Pacfic Time(US & Canada)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Sis ID:</h4></td>
+                        <td>
+                            CS4550.12631.202410
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Subaccount:</h4></td>
+                        <td>
+                            <a href="#">CS Undergrad</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Term:</h4></td>
+                        <td>
+                            202410_1 Fall 2023 Semester Full Term
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><h4>Participation:</h4></td>
+                        <td>
+                            <br />
+                            <select>
+                                <option value="term">Term</option>
+                                <option value="term2">Term 2</option>
+                            </select>
+                            Course participation is limited to term start and end dates.
+
+                            <h4>Start</h4>
+                            <input type="date" placeholder="YYYY-MM-DD" />
+                            <br />
+                            <h4>End</h4>
+                            <input type="date" placeholder="YYYY-MM-DD" />
+                            <br />
+                            <label>
+                                <input type="checkbox" value="restrict_viewing_before" name="restrict_viewing_before_start_date" />
+                                Restrict students from viewing course before term start date
+                            </label>
+                            <br />
+                            <label>
+                                <input type="checkbox" value="restrict_viewing_after" name="restrict_viewing_after_end_date" />
+                                Restrict students from viewing course after term end date
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><h4>Default due time:</h4></td>
+                        <td>
+                            <br />
+                            <select>
+                                <option value="default_time">Account Default(11:59 P.M)</option>
+                                <option value="midday_time">Midday(12:00 PM)</option>
+                            </select>
+                            <br />
+                            This influences the user interface for settling due dates. It does not change the time due for any existing assignments.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><h4>Language:</h4></td>
+                        <td>
+                            <br />
+                            <select>
+                                <option value="default_language">Not Set (user-configurable,defaults to English (Unit))</option>
+                                <option value="spanish">Spanish</option>
+                            </select>
+                            <br />
+                            This influences the user interface for settling due dates. It does not change the time due for any existing assignments.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><h4>File Storage:</h4></td>
+                        <td>
+                            10000 megabytes.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Large Course:</h4></td>
+                        <td>
+                            <label>
+                                <input type="checkbox" value="launch_speed_grader_enabled" />
+                                Launch SpeedGrader Filtered by Student Group
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Grading Scheme:</h4></td>
+                        <td>
+                            <label>
+                                <input type="checkbox" value="course_grading_scheme_enabled" />
+                                Enable Course Grading Scheme.
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>License:</h4></td>
+                        <td>
+                            <select>
+                                <option value="private">Private (Copyrighted)</option>
+                                <option value="public">Publich</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><h4>File Copyright:</h4></td>
+                        <td>
+                            <label>
+                                <input type="checkbox" value="file_copyright_enabled" />
+                                Copyright and license information must be provided for the files before they are published.
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td valign="top"><h4>Visibility:</h4></td>
+                        <td>
+                            <br />
+                            If you need to make the course public please contact your administrator/support.
+                            <br />
+                            <select>
+                                <option value="course">Course</option>
+                                <option value="course2">Course 2</option>
+                            </select>
+                            <br />
+                            <label>
+                                <input type="checkbox" value="public_course_index" />
+                                Include this course in the public course index
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Format:</h4></td>
+                        <td>
+                            <select>
+                                <option value="onCampus">On campus</option>
+                                <option value="online">Online</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><h4>Mastery Paths:</h4></td>
+                        <td>
+                            <label>
+                                <input type="checkbox" value="masteryPaths" />
+                                Enable induvidual learning paths for students based on assessment.
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Description:</h4></td>
+                        <td>
+                            <form id="textarea">
+
+                                <textarea cols="60" rows="10"></textarea>
+                            </form>
+                            <a href="#">more options</a>
+                        </td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td> <button type="button">Update Course Details</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+             </td>
+         </tr>
+    </table>
+</body>
+</html>

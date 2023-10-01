@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment Edit</title>
+</head>
+<body>
+
+    <table style="width:100%">
+        <tr>
+            <!-- First Column: Courses Navigation -->
+            <td style="width: 25%; vertical-align: top;">
+                <h2>Navigation Tabs</h2>
+                <ul>
+                    <li><a href="../profile/index.html">Acccount</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="../home.html">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li><a href="#">Comments</a></li>
+                    <li><a href="#">Help</a></li>
+                    <!-- Add more courses as needed -->
+                </ul>
+            </td>
+
+            <!-- Second Column: Course Navigation -->
+            <td style="width: 25%; vertical-align: top;">
+                <h2>Course Menu</h2>
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="index.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="../grades.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="../courses/index.html">Settings</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </td>
+
+            <td style="width: 25%; vertical-align: top;">
+                <select>
+                    <option value="edit">Edit</option>
+                    <option value="speedGrader" selected>Speed Grader</option>
+                    <option value="duplicate">Duplicate</option>
+                    <option value="delete">Delete</option>
+                    <option value="moveTo">Move To...</option>
+                    <option value="sendTo">Send To...</option>
+                    <option value="copyTo">Copy To...</option>
+                    <option value="shareToCommons">Share to Commons...</option>
+                </select>
+                <h3>Assignment Name</h3>
+                <input type="text" placeholder="A1-ENV + HTML" value="A1-ENV + HTML">
+                <br />
+                <br />
+
+                <form id="textarea">
+                    <textarea cols="15" rows="5">This is the assigment description.</textarea>
+                </form>
+
+                <br />Points<br />
+                <input type="number" placeholder="100" value="100">
+                <br />
+                <br />
+
+                Assigment Group<br />
+                <select>
+                    <option value="assignments" selected>Assignments</option>
+                    <option value="option2">option2/option>
+                    <option value="option3">option3/option>
+                </select>
+                <br />
+                <br />
+
+                Display Grade as<br />
+                <select>
+                    <option value="percentage" selected>Percentage</option>
+                    <option value="option2">option2/option>
+                    <option value="option3">option3/option>
+                </select>
+                <br />
+                <br />
+
+                Submission type<br />
+                <select>
+                    <option value="online" selected>Online</option>
+                    <option value="option2">option2/option>
+                    <option value="option3">option3/option>
+                </select>
+                <br />
+                <br />
+
+                Online Entry option<br />
+                <input type="checkbox" name="online-entry-options" value="textEntry"> Text Entry <br />
+                <input type="checkbox" name="online-entry-options" value="website"> Website <br />
+                <input type="checkbox" name="online-entry-options" value="mediaRecordigns"> Media Recordings <br />
+                <input type="checkbox" name="online-entry-options" value="studentAnnotations"> Student Annotations <br />
+                <input type="checkbox" name="online-entry-options" value="fileUpload"> File Uploads <br />
+                <br />
+                <br />
+
+                Submission Attempts<br />
+                <select>
+                    <option value="unlimited" selected>Unlimited</option>
+                    <option value="option2">option2/option>
+                    <option value="option3">option3/option>
+                </select>
+                <br />
+                <br />
+
+                Plagiarism Review<br />
+                <select>
+                    <option value="None" selected>None</option>
+                    <option value="option2">option2/option>
+                    <option value="option3">option3/option>
+                </select>
+                <br />
+                <br />
+
+                Group Assignment<br />
+                <input type="checkbox" name="group_assignment" value="group_yes"> This is a group assignments <br />
+                <br />
+                <br />
+
+                Peer reviews<br />
+                <input type="checkbox" name="peer_reviews" value="peer_reviews_yes"> Require Peer reviews <br />
+                <br />
+                <br />
+
+                Assign<br />
+                Assign to<br />
+                <input type="text" placeholder="Everyone" value="Everyone">
+                <br />
+                <br />
+
+                Due<br />
+                <input type="date" placeholder=""YYYY-MM-DD" value="2023-01-01" />
+                <br />
+                <br />
+
+                Available from<br />
+                <input type="date" placeholder=""YYYY-MM-DD" value="2023-01-01" />
+                <br />
+                <br />
+
+                Untill<br />
+                <input type="date" placeholder=""YYYY-MM-DD" value="2023-01-01" />
+                <br />
+                <br />
+
+                <button>Cancel</button>
+                <button>Save</button>
+
+            </td>
+        </tr>
+        </table>
+    </body>
+</html>
+

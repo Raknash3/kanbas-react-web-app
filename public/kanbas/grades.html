@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grades</title>
+</head>
+<body>
+
+    <table style="width:100%">
+        <tr>
+            <!-- First Column: Courses Navigation -->
+            <td style="width: 15%; vertical-align: top;">
+                <h2>Navigation Tabs</h2>
+                <ul>
+                    <li><a href="profile/index.html">Acccount</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="home.html">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li><a href="#">Comments</a></li>
+                    <li><a href="#">Help</a></li>
+                    <!-- Add more courses as needed -->
+                </ul>
+            </td>
+
+            <!-- Second Column: Course Navigation -->
+            <td style="width: 15%; vertical-align: top;">
+                <h2>Course Menu</h2>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="assignments/index.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="grades.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="courses/index.html">Settings</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </td>
+            <!-- Third Column: Grades Screen -->
+            <td style="width: 70%; vertical-align: top;">
+                <br />
+                <!-- Gradebook Dropdown -->
+                <label for="gradebook">Gradebook:</label>
+                <select id="gradebook">
+                    <option value="gradebook1">Gradebook 1</option>
+                    <option value="gradebook2">Gradebook 2</option>
+                    <!-- Add more gradebooks as needed -->
+                </select>
+                <button>Import</button>
+                <!-- Export Dropdown -->
+                <label for="export">Export:</label>
+                <select id="export">
+                    <option value="export1">Export 1</option>
+                    <option value="export2">Export 2</option>
+                    <!-- Add more export options as needed -->
+                </select>
+                <button>Configure</button>
+                <h2> Student Names</h2>
+                <input type="text" placeholder="Search students">
+                <h2> Assignment Names</h2>
+                <input type="text" placeholder="Search Assignments">
+                <br />
+                <br />
+                <button>Apply Filters</button>
+                <br />
+                <h2>Grade</h2>
+                <table border="1">
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Assignment 1</th>
+                        <th>Assignment 2</th>
+                        <th>Assignment 3</th>
+                        <th>Assignment 4</th>
+                    </tr>
+                    <tr>
+                        <td>Alice Wonderland</td>
+                        <td><input type="text" value="90"></td>
+                        <td>85</td>
+                        <td><input type="text" value="70"></td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Bruce Wayne</td>
+                        <td><input type="text" value="75"></td>
+                        <td><input type="text" value="88"></td>
+                        <td>60</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>George Washington</td>
+                        <td>95</td>
+                        <td><input type="text" value="92"></td>
+                        <td>75</td>
+                        <td><input type="text" value="88"></td>
+                    </tr>
+                    <tr>
+                        <td>Tim Cook</td>
+                        <td><input type="text" value="85"></td>
+                        <td>78</td>
+                        <td><input type="text" value="80"></td>
+                        <td>90</td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
