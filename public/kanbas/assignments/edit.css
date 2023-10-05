@@ -18,7 +18,7 @@ body, html, .sidebar, .course-navigation, .course-content {
 }
 
 /* Provide some space between the top of the page and course sections */
-.course-navigation, .course-content {
+.course-navigation{
     margin-top: 80px; /* Adjust the value as needed */
 }
 
@@ -34,7 +34,7 @@ body, html, .container, .sidebar, .course-navigation, .course-content, .course-s
     width: 100%;
 }
 
-.course-navigation, .course-content {
+.course-navigation{
     margin-top: 80px; /* Adjust the value as needed */
 }
 

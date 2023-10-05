@@ -19,7 +19,7 @@ body, html, .container, .sidebar, .course-navigation, .course-content, .course-s
 }
 
 /* Provide some space between the top of the page and course sections */
-.course-navigation, .course-content, .course-status {
+.course-navigation, .course-status {
     margin-top: 80px; /* Adjust the value as needed */
 }
 

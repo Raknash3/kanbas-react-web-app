@@ -19,7 +19,7 @@ body, html, .sidebar, .course-navigation, .course-content {
 }
 
 /* Provide some space between the top of the page and course sections */
-.course-navigation,.course-content {
+.course-navigation{
     margin-top: 80px; /* Adjust the value as needed */
 }
 
@@ -137,7 +137,7 @@ body, html {
     font-family: Arial, sans-serif;
     margin-left: 100px; /* Add some space to the left */
     margin-right: 0px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
     .course-content .mt-4 {
