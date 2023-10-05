@@ -3,122 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <title>Grades</title>
+    <link rel="stylesheet" href="grade.css">
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body class="black-background">
+    <div class="grid-container">
+        <div class="sidebar">
+            <img src="seal.jpg" alt="College Emblem" class="college-emblem">
+            <ul class="navigation-list">
+                <li>
+                    <i class="fas fa-user fa-2x" style="color: red;"></i>
+                    <a href="profile/index.html" style="color: white;">Account</a>
+                </li>
+                <li>
+                    <i class="fas fa-tachometer-alt fa-2x" style="color: red;"></i>
+                    <a href="dashboard.html" style="color: white;">Dashboard</a>
+                </li>
+                <li class="active">
+                    <i class="fas fa-book fa-2x" style="color: red;"></i>
+                    <a href="home.html" style="color: white;">Courses</a>
+                </li>
+                <li>
+                    <i class="fas fa-calendar fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Calendar</a>
+                </li>
+                <li>
+                    <i class="fas fa-inbox fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Inbox</a>
+                </li>
+                <li>
+                    <i class="fas fa-history fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">History</a>
+                </li>
+                <li>
+                    <i class="fas fa-chalkboard fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Studio</a>
+                </li>
+                <li>
+                    <i class="fas fa-comments fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Comments</a>
+                </li>
+                <li>
+                    <i class="fas fa-question-circle fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Help</a>
+                </li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </div>
 
-    <table style="width:100%">
-        <tr>
-            <!-- First Column: Courses Navigation -->
-            <td style="width: 15%; vertical-align: top;">
-                <h2>Navigation Tabs</h2>
-                <ul>
-                    <li><a href="profile/index.html">Acccount</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="home.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Comments</a></li>
-                    <li><a href="#">Help</a></li>
-                    <!-- Add more courses as needed -->
-                </ul>
-            </td>
+        <div class="course-navigation">
+            <h2>Course Menu</h2>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="assignments/index.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li class="active2"><a href="grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="courses/index.html">Settings</a></li>
+            </ul>
+        </div>
 
-            <!-- Second Column: Course Navigation -->
-            <td style="width: 15%; vertical-align: top;">
-                <h2>Course Menu</h2>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="assignments/index.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="grades.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="courses/index.html">Settings</a></li>
-                    <!-- Add more navigation links as needed -->
-                </ul>
-            </td>
-            <!-- Third Column: Grades Screen -->
-            <td style="width: 70%; vertical-align: top;">
-                <br />
-                <!-- Gradebook Dropdown -->
-                <label for="gradebook">Gradebook:</label>
-                <select id="gradebook">
-                    <option value="gradebook1">Gradebook 1</option>
-                    <option value="gradebook2">Gradebook 2</option>
-                    <!-- Add more gradebooks as needed -->
-                </select>
-                <button>Import</button>
-                <!-- Export Dropdown -->
-                <label for="export">Export:</label>
-                <select id="export">
-                    <option value="export1">Export 1</option>
-                    <option value="export2">Export 2</option>
-                    <!-- Add more export options as needed -->
-                </select>
-                <button>Configure</button>
-                <h2> Student Names</h2>
-                <input type="text" placeholder="Search students">
-                <h2> Assignment Names</h2>
-                <input type="text" placeholder="Search Assignments">
-                <br />
-                <br />
-                <button>Apply Filters</button>
-                <br />
-                <h2>Grade</h2>
-                <table border="1">
-                    <tr>
-                        <th>Student Name</th>
-                        <th>Assignment 1</th>
-                        <th>Assignment 2</th>
-                        <th>Assignment 3</th>
-                        <th>Assignment 4</th>
-                    </tr>
-                    <tr>
-                        <td>Alice Wonderland</td>
-                        <td><input type="text" value="90"></td>
-                        <td>85</td>
-                        <td><input type="text" value="70"></td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>Bruce Wayne</td>
-                        <td><input type="text" value="75"></td>
-                        <td><input type="text" value="88"></td>
-                        <td>60</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>George Washington</td>
-                        <td>95</td>
-                        <td><input type="text" value="92"></td>
-                        <td>75</td>
-                        <td><input type="text" value="88"></td>
-                    </tr>
-                    <tr>
-                        <td>Tim Cook</td>
-                        <td><input type="text" value="85"></td>
-                        <td>78</td>
-                        <td><input type="text" value="80"></td>
-                        <td>90</td>
-                    </tr>
-                </table>
+        <!-- Third Column: Grades Screen -->
+        <div class="grades-screen">
+            <br />
+            <div class="d-flex justify-content-end mb-3">
+                <button class="btn btn-outline-dark mr-2 btn btn-secondary">Import</button>
+                <div class="dropdown">
+                    <button class=" btn btn-outline-dark dropdown-toggle" type="button" id="exportDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Export
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="exportDropdown">
+                        <li><a class="dropdown-item" href="#">Export 1</a></li>
+                        <li><a class="dropdown-item" href="#">Export 2</a></li>
+                        <!-- Add more export options as needed -->
+                    </ul>
+                </div>
+                <button class="btn btn-outline-dark"><i class="fas fa-cog"></i></button>
+            </div>
+            <br />
+            <br />
+            <div class="row mb-3">
+                <div class="col">
+                    <h2> Student Names</h2>
+                    <input type="text" class="form-control" placeholder="Search students">
+                </div>
+                <div class="col">
+                    <h2> Assignment Names</h2>
+                    <input type="text" class="form-control" placeholder="Search Assignments">
+                </div>
+            </div>
+            <button class="btn btn-primary">
+                <i class="fas fa-filter"></i> Apply Filters
+            </button>
+            <br />
+            <br />
+            <h2>Grade</h2>
 
-            </td>
-        </tr>
-    </table>
+            <table class="grades-table">
+                <thead>
+                    <tr class="grades-row grades-header">
+                        <th class="grades-cell">Student Name</th>
+                        <th class="grades-cell">Assignment 1</th>
+                        <th class="grades-cell">Assignment 2</th>
+                        <th class="grades-cell">Assignment 3</th>
+                        <th class="grades-cell">Assignment 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="grades-row">
+                        <td class="grades-cell">Alice Wonderland</td>
+                        <td class="grades-cell"><input type="text" value="90"></td>
+                        <td class="grades-cell">85</td>
+                        <td class="grades-cell"><input type="text" value="70"></td>
+                        <td class="grades-cell">95</td>
+                    </tr>
+                    <tr class="grades-row">
+                        <td class="grades-cell">Bruce Wayne</td>
+                        <td class="grades-cell"><input type="text" value="75"></td>
+                        <td class="grades-cell"><input type="text" value="88"></td>
+                        <td class="grades-cell">60</td>
+                        <td class="grades-cell">80</td>
+                    </tr>
+                    <tr class="grades-row">
+                        <td class="grades-cell">George Washington</td>
+                        <td class="grades-cell">95</td>
+                        <td class="grades-cell"><input type="text" value="92"></td>
+                        <td class="grades-cell">75</td>
+                        <td class="grades-cell"><input type="text" value="88"></td>
+                    </tr>
+                    <tr class="grades-row">
+                        <td class="grades-cell">Tim Cook</td>
+                        <td class="grades-cell"><input type="text" value="85"></td>
+                        <td class="grades-cell">78</td>
+                        <td class="grades-cell"><input type="text" value="80"></td>
+                        <td class="grades-cell">90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
 </body>
 </html>

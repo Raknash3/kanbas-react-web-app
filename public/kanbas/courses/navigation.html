@@ -2,197 +2,256 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Courses</title>
+    <title>Grades</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
-    <table style="width:100%">
-        <tr>
-            <!-- First Column: Courses Navigation -->
-            <td style="width: 15%; vertical-align: top;">
-                <h2>Navigation Tabs</h2>
-                <ul>
-                    <li><a href="../profile/index.html">Acccount</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="../home.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Comments</a></li>
-                    <li><a href="#">Help</a></li>
-                    <!-- Add more courses as needed -->
-                </ul>
-            </td>
+<body class="black-background">
+    <div class="grid-container">
+        <div class="sidebar">
+            <img src="../seal.jpg" alt="College Emblem" class="college-emblem">
+            <ul class="navigation-list">
+                <li>
+                    <i class="fas fa-user fa-2x" style="color: red;"></i>
+                    <a href="../profile/index.html" style="color: white;">Account</a>
+                </li>
+                <li>
+                    <i class="fas fa-tachometer-alt fa-2x" style="color: red;"></i>
+                    <a href="../dashboard.html" style="color: white;">Dashboard</a>
+                </li>
+                <li class="active">
+                    <i class="fas fa-book fa-2x" style="color: red;"></i>
+                    <a href="../home.html" style="color: white;">Courses</a>
+                </li>
+                <li>
+                    <i class="fas fa-calendar fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Calendar</a>
+                </li>
+                <li>
+                    <i class="fas fa-inbox fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Inbox</a>
+                </li>
+                <li>
+                    <i class="fas fa-history fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">History</a>
+                </li>
+                <li>
+                    <i class="fas fa-chalkboard fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Studio</a>
+                </li>
+                <li>
+                    <i class="fas fa-comments fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Comments</a>
+                </li>
+                <li>
+                    <i class="fas fa-question-circle fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Help</a>
+                </li>
 
-            <td style="width: 15%; vertical-align: top;">
-                <h2>Course Menu</h2>
-                <ul>
-                    <li><a href="../home.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="../assignments/index.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="../grades.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="index.html">Settings</a></li>
-                    <!-- Add more navigation links as needed -->
-                </ul>
-            </td>
-            <td style="width: 70%; vertical-align: top;">
-                <table>
-                    <tr>
-                        <td> <a href="index.html">Course Details</a></td>
-                        <td> <a href="#">Sections</a></td>
-                        <td> <a href="#">Navigation</a></td>
-                        <td> <a href="#">Apps</a></td>
-                        <td> <a href="#">Feature Options</a></td>
-                        <td> <a href="#">Integrations</a></td>
-                    </tr>
-                </table>
-                <br />
-                Drag and drop items to reorder them in the course navigation.
-                <table border="1" width="100%">
-                    <tr><td> <a href="../home.html">Home</a> </td></tr>
-                    <tr><td> <a href="#">Modules</a> </td></tr>
-                    <tr><td> <a href="#">Piazza</a> </td></tr>
-                    <tr><td> <a href="#">Zoom Meetings</a> </td></tr>
-                    <tr><td> <a href="../assignments/index.html">Assignments</a> </td></tr>
-                    <tr><td> <a href="#">Quizzes</a> </td></tr>
-                    <tr><td> <a href="../grades.html">Grades</a> </td></tr>
-                    <tr><td> <a href="#">People</a> </td></tr>
-                    <tr><td> <a href="#">Panopto Video</a> </td></tr>
-                </table>
-                <label>
-                    Drag items here to hide them from students.<br />
-                    Disabling most pages will cause students who visit those pages to be redirected to the course home page.
-                </label>
+            </ul>
+        </div>
 
-                <table border="1" width="100%">
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Chat</a> </h3>
-                            <br /> Page disabled, wont appear in navigation
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">SCORM</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Attendance</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+        <div class="course-navigation">
+            <h2>Course Menu</h2>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="../assignments/index.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="../grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li class="active2"><a href="index.html">Settings</a></li>
+            </ul>
+        </div>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Barnes and Noble Bookstore</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+        <div class="course-details">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="course-details-tab" href="index.html">Course Details</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="sections-tab" href="#.html">Sections</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="navigation-tab" href="navigation.html">Navigation</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="apps-tab" href="#.html">Apps</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="feature-options-tab" href="#.html">Feature Options</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="integrations-tab" href="#.html">Integrations</a>
+                </li>
+            </ul>
+            <br />
+            <br />
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Digication</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="../home.html"><h4>Home</h4></a>
+                </li>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Top Hat</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Modules</h4></a>
+                </li>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Syllabus</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Piazza</h4></a>
+                </li>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Perusall</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Zoom Meetings</h4></a>
+                </li>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Microsoft Teams Meetings</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+                <li class="list-group-item">
+                    <a href="../assignments/index.html"><h4>Assignments</h4></a>
+                </li>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">FACT Reporting and Photo Roster</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Quizzes</h4></a>
+                </li>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Progress Reports (Navigate)</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+                <li class="list-group-item">
+                    <a href="../grades.html"><h4>Grades</h4></a>
+                </li>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Microsoft Team for canvas</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+                <li class="list-group-item">
+                    <a href="#.html"><h4>People</h4></a>
+                </li>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">VHL Central</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Panopto Video</h4></a>
+                </li>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Gradescope 1.3</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+            </ul>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">Credentails</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
+            <h5>Drag items here to hide them from students</h5>
+            Disbaling most pages will cause students who visit those pages to be redirected to teh course home page.
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Chat</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3> <a href="#">iClicker</a> </h3>
-                            Page disabled, wont appear in navigation
-                        </td>
-                </table>
-                <br />
-                <br />
-                <button>Save</button>
-            </td>
-        </tr>
-    </table>
+                <li class="list-group-item">
+                    <a href="#.html"><h4>SCORM</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Attendance</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Barnes and Noble Bookstore</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Digication</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Top Hat</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Syllabus</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Perusall</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Microsoft Teams Meetings</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>FACT Reporting and Photo Roster</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Progress Reports (Navigate)</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Microsoft Team for canvas</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>VHL Central</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Gradescope 1.3</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>Credentails</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#.html"><h4>iClicker</h4></a>
+                    <br />
+                    <span class="option-details">Page disabled,won't appear in navigation'</span>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
+
+
+

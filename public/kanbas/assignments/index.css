@@ -1,0 +1,259 @@
+/* General Styling */
+/* ---------------------------------- */
+
+/* Set a white background for the body */
+.black-background {
+    background-color: white;
+}
+
+/* Box-sizing and padding for course sections */
+.course-navigation, .course-content {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* Set full height and width for specified elements */
+body, html, .sidebar, .course-navigation, .course-content {
+    height: 100%;
+    width: 100%;
+}
+
+/* Provide some space between the top of the page and course sections */
+.course-navigation,.course-content {
+    margin-top: 80px; /* Adjust the value as needed */
+}
+
+/* Grid Layout */
+/* ---------------------------------- */
+
+/* Create a 4-column grid layout with a 10px gap */
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 70%; /* Adjust as needed */
+    grid-gap: 10px; /* Adjust the gap between columns as needed */
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar Styling */
+/* ---------------------------------- */
+
+.sidebar {
+    background-color: black;
+    color: white;
+    width: 84px;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+}
+
+/* Kanbas Navigation Sidebar */
+.sidebar, .course-navigation, .course-content, .course-status {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* Set 100% height for all container elements */
+body, html, .container, .sidebar, .course-navigation, .course-content, .course-status {
+    height: 100%;
+    width: 100%;
+}
+
+.course-navigation, .course-content{
+    margin-top: 80px; /* Adjust the value as needed */
+}
+
+/* Reset default margins and paddings */
+body, html {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Flexbox container */
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clearfix for float elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: black;
+    color: white;
+    width: 84px;
+    height: 100%;
+    text-align: center;
+    margin-left: 0;
+    position: fixed;
+}
+
+/* Course Navigation styles */
+.course-navigation {
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+    /* Adjust the margin */
+.course-navigation {
+    margin-left: 100px; /* Adjust as needed */
+}
+
+    .course-navigation ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .course-navigation a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .course-navigation li {
+        margin-bottom: 10px;
+    }
+
+    .course-navigation ul li.active2 a {
+        color: black;
+        border: 1px solid black;
+        padding: 3px;
+    }
+
+/* Course Content styles */
+.course-content {
+    width: 100%;
+    grid-column: 2 / 3;
+    font-family: Arial, sans-serif;
+    margin-left: 100px; /* Add some space to the left */
+    margin-right: 0px;
+    margin-top: 20px;
+}
+
+    .course-content .mt-4 {
+        margin-top: 4rem !important;
+    }
+
+    /* Styling for labels */
+    .course-content label {
+        font-weight: bold;
+    }
+
+    /* Styling for select elements */
+    .course-content select {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    /* Styling for buttons */
+    .course-content button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 4px;
+        padding: 8px 16px;
+        margin-bottom: 10px;
+    }
+
+        .course-content button:hover {
+            background-color: #0056b3;
+        }
+
+    /* Styling for h2 elements */
+    .course-content h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    /* Styling for input elements */
+    .course-content input[type="text"] {
+        width: calc(100% - 16px);
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    /* Position Gradebook and Export elements side by side */
+    .course-content select#gradebook,
+    .course-content select#export,
+    .course-content button#import,
+    .course-content button#configure {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px; /* Add some space between the buttons */
+    }
+
+/* Additional Styles */
+/* ---------------------------------- */
+
+/* Style for the college emblem image */
+.college-emblem {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Remove bullet points and adjust margin for navigation list */
+.navigation-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .navigation-list li {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .navigation-list a {
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        font-size: 11px;
+    }
+
+    .navigation-list i {
+        font-size: 23px;
+    }
+
+    .navigation-list li.active {
+        background-color: white !important;
+    }
+
+        .navigation-list li.active a {
+            color: black !important;
+        }
+
+.list-group-item.list-group-item-secondary a.text-danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 5px;
+    color: black !important;
+    text-decoration: none;
+}
+
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}

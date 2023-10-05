@@ -1,0 +1,154 @@
+/* General Styling */
+/* ---------------------------------- */
+
+/* Set a white background for the body */
+.black-background {
+    background-color: white;
+}
+
+/* Box-sizing and padding for course sections */
+.course-navigation, .course-details {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* Set full height and width for specified elements */
+body, html, .container, .sidebar, .course-navigation, .course-details {
+    height: 100%;
+    width: 100%;
+}
+
+/* Provide some space between the top of the page and course sections */
+.course-navigation, .course-details {
+    margin-top: 80px; /* Adjust the value as needed */
+}
+
+/* Grid Layout */
+/* ---------------------------------- */
+
+/* Create a 4-column grid layout with a 10px gap */
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 70%; /* Adjust as needed */
+    grid-gap: 10px; /* Adjust the gap between columns as needed */
+    margin: 0;
+    padding: 0;
+}
+
+.course-navigation, .course-details {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* Sidebar Styling */
+/* ---------------------------------- */
+
+.sidebar {
+    background-color: black;
+    color: white;
+    width: 84px;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+}
+
+* Course Navigation */
+/* ---------------------------------- */
+/* Set a width for the course navigation */
+.course-navigation {
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+/* Adjust the margin */
+.course-navigation {
+    margin-left: 100px; /* Adjust as needed */
+}
+
+    /* Style the navigation links */
+    .course-navigation ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .course-navigation a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .course-navigation li {
+        margin-bottom: 10px;
+    }
+
+    .course-navigation ul li.active2 a {
+        color: black;
+        border: 1px solid black;
+        padding: 3px;
+    }
+
+.course-details {
+    width: 100%;
+    grid-column: 2 / 3;
+    margin-left: 100px;
+}
+
+/* Additional Styles */
+/* ---------------------------------- */
+
+/* Style for the college emblem image */
+.college-emblem {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Remove bullet points and adjust margin for navigation list */
+.navigation-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .navigation-list li {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .navigation-list a {
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        font-size: 11px;
+    }
+
+    .navigation-list i {
+        font-size: 23px;
+    }
+
+    .navigation-list li.active {
+        background-color: white !important;
+    }
+
+        .navigation-list li.active a {
+            color: black !important;
+        }
+
+
+/* Styles for list items */
+.list-group-item.list-group-item-secondary a.text-danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 5px;
+    color: black !important;
+    text-decoration: none;
+}
+
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}

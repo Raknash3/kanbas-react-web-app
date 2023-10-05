@@ -1,0 +1,250 @@
+/* General Styling */
+/* ---------------------------------- */
+
+/* Set a white background for the body */
+.black-background {
+    background-color: white;
+}
+
+/* Box-sizing and padding for course sections */
+.course-navigation, .grades-screen {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* Set full height and width for specified elements */
+body, html, .container, .sidebar, .course-navigation, .grades-screen {
+    height: 100%;
+    width: 100%;
+}
+
+/* Provide some space between the top of the page and course sections */
+.course-navigation, .grades-screen {
+    margin-top: 80px; /* Adjust the value as needed */
+}
+
+/* Grid Layout */
+/* ---------------------------------- */
+
+/* Create a 4-column grid layout with a 10px gap */
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 70%; /* Adjust as needed */
+    grid-gap: 10px; /* Adjust the gap between columns as needed */
+    margin: 0;
+    padding: 0;
+}
+
+.course-navigation, .grades-screen {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* Sidebar Styling */
+/* ---------------------------------- */
+
+.sidebar {
+    background-color: black;
+    color: white;
+    width: 84px;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+}
+
+* Course Navigation */
+/* ---------------------------------- */
+/* Set a width for the course navigation */
+.course-navigation {
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+/* Adjust the margin */
+.course-navigation {
+    margin-left: 100px; /* Adjust as needed */
+}
+
+    /* Style the navigation links */
+    .course-navigation ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .course-navigation a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .course-navigation li {
+        margin-bottom: 10px;
+    }
+
+    .course-navigation ul li.active2 a {
+        color: black;
+        border: 1px solid black;
+        padding: 3px;
+    }
+
+
+/* Grades Screen */
+.grades-screen {
+    width: 100%;
+    grid-column: 2 / 3;
+    font-family: Arial, sans-serif;
+    margin-left: 100px; /* Add some space to the left */
+    margin-right: 0px;
+}
+
+    /* Styling for labels */
+    .grades-screen label {
+        font-weight: bold;
+    }
+
+    /* Styling for select elements */
+    .grades-screen select {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    /* Styling for buttons */
+    .grades-screen button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 4px;
+        padding: 8px 16px;
+        margin-bottom: 10px;
+    }
+
+        .grades-screen button:hover {
+            background-color: #0056b3;
+        }
+
+    /* Styling for h2 elements */
+    .grades-screen h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    /* Styling for input elements */
+    .grades-screen input[type="text"] {
+        width: calc(100% - 16px);
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    /* Position Gradebook and Export elements side by side */
+    .grades-screen select#gradebook,
+    .grades-screen select#export,
+    .grades-screen button#import,
+    .grades-screen button#configure {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px; /* Add some space between the buttons */
+    }
+
+/* Styling for the table */
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    /* Styling for table header cells */
+    .grades-table th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        background-color: #f2f2f2;
+    }
+
+    /* Styling for table data cells */
+    .grades-table td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    /* Styling for input elements inside table cells */
+    .grades-table input[type="text"] {
+        width: 60px;
+        text-align: center;
+    }
+
+
+.grades-screen .btn {
+    color: black;
+    margin-right: 10px;
+}
+
+
+/* Additional Styles */
+/* ---------------------------------- */
+
+/* Style for the college emblem image */
+.college-emblem {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Remove bullet points and adjust margin for navigation list */
+.navigation-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .navigation-list li {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .navigation-list a {
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        font-size: 11px;
+    }
+
+    .navigation-list i {
+        font-size: 23px;
+    }
+
+    .navigation-list li.active {
+        background-color: white !important;
+    }
+
+        .navigation-list li.active a {
+            color: black !important;
+        }
+
+
+/* Styles for list items */
+.list-group-item.list-group-item-secondary a.text-danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 5px;
+    color: black !important;
+    text-decoration: none;
+}
+
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}

@@ -3,73 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
 </head>
+<body class="black-background">
 
-<body>
+    <div class="grid-container">
 
-    <table style="width:100%">
-        <tr>
-            <!-- First Column: Courses Navigation -->
-            <td style="width: 15%; vertical-align: top;">
-                <h2>Navigation Tabs</h2>
-                <ul>
-                    <li><a href="index.html">Acccount</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="../home.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Comments</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </td>
+        <div class="sidebar">
+            <img src="../seal.jpg" alt="College Emblem" class="college-emblem">
+            <ul class="navigation-list">
+                <li class="active">
+                    <i class="fas fa-user fa-2x" style="color: red;"></i>
+                    <a href="index.html" style="color: white;">Account</a>
+                </li>
+                <li>
+                    <i class="fas fa-tachometer-alt fa-2x" style="color: red;"></i>
+                    <a href="../dashboard.html" style="color: white;">Dashboard</a>
+                </li>
+                <li>
+                    <i class="fas fa-book fa-2x" style="color: red;"></i>
+                    <a href="../home.html" style="color: white;">Courses</a>
+                </li>
+                <li>
+                    <i class="fas fa-calendar fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Calendar</a>
+                </li>
+                <li>
+                    <i class="fas fa-inbox fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Inbox</a>
+                </li>
+                <li>
+                    <i class="fas fa-history fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">History</a>
+                </li>
+                <li>
+                    <i class="fas fa-chalkboard fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Studio</a>
+                </li>
+                <li>
+                    <i class="fas fa-comments fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Comments</a>
+                </li>
+                <li>
+                    <i class="fas fa-question-circle fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Help</a>
+                </li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </div>
+        
 
-            <td style="width: 15%; vertical-align: top;">
+
+        <div class="course-navigation">
+            <div class="header">
+                <div class="profile-info">
+                    <i class="fas fa-user"></i>
+                    <span>Jose Annunziato's Profile</span>
+                </div>
                 <h2>Account Menu</h2>
-                <ul>
-                    <li><a href="#">Notifications</a></li>
-                    <li><a href="index.html">Profile</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">ePortfolios</a></li>
-                    <li><a href="#">Shared Content</a></li>
-                    <li><a href="#">The Hub</a></li>
-                    <li><a href="#">Qwickly Course Tools</a></li>
-                    <li><a href="#">Global Annoucements</a></li>
-                </ul>
-            </td>
+            </div>
+            <ul>
+                <li><a href="#">Notifications</a></li>
+                <li class="active2"><a href="index.html">Profile</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">ePortfolios</a></li>
+                <li><a href="#">Shared Content</a></li>
+                <li><a href="#">The Hub</a></li>
+                <li><a href="#">Qwickly Course Tools</a></li>
+                <li><a href="#">Global Annoucements</a></li>
+            </ul>
+        </div>
 
-            <td style="width: 60%; vertical-align: top;">
-                Jose Annunziato's Profile<br /><br />
+        <div class="profile-section">
+            <i class="fas fa-user-circle fa-10x"></i>          
+            <a href="edit.html" class="btn btn-secondary profile-edit custom-black" style="float: right;">
+                <i class="fas fa-pencil-alt"></i> Edit Profile
+            </a>
+            <h2>
+                Jose Annunziato
 
-                <h2>
-                    Jose Annunziato
-                    <a href="edit.html"><button>Edit Profile</button></a>
-                </h2>
+            </h2>
 
-                <h3>
-                    Contact
-                </h3>
-                No registered services, you can add some on the <a href="#">settings</a> page.
-                <br />
-                <br />
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+            </div>
 
-                <h3>
-                    Biography
-                </h3>
-                Faculty, Software Engineer, AI, Space, and reneables enthusiast.
-                <br />
-                <br />
+            <div class="biography">
+                <h3>Biography</h3>
+                <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
+            </div>
 
-                <h3>
-                    Links
-                </h3>
+            <div class="links">
+                <h3>Links</h3>
                 <a href="https://www.youtube.com/">YouTube</a>
-            </td>
+            </div>
+        </div>
 
-        </tr>
-    </table>
-
+    </div>
 </body>
 </html>

@@ -2,57 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment Edit</title>
+    <title>Assignments</title>
+    <link rel="stylesheet" href="edit.css">
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
 </head>
-<body>
 
-    <table style="width:100%">
-        <tr>
-            <!-- First Column: Courses Navigation -->
-            <td style="width: 25%; vertical-align: top;">
-                <h2>Navigation Tabs</h2>
-                <ul>
-                    <li><a href="../profile/index.html">Acccount</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="../home.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Comments</a></li>
-                    <li><a href="#">Help</a></li>
-                    <!-- Add more courses as needed -->
-                </ul>
-            </td>
+<body class="black-background">
+    <div class="grid-container">
+        <div class="sidebar">
+            <img src="../seal.jpg" alt="College Emblem" class="college-emblem">
+            <ul class="navigation-list">
+                <li>
+                    <i class="fas fa-user fa-2x" style="color: red;"></i>
+                    <a href="../profile/index.html" style="color: white;">Account</a>
+                </li>
+                <li>
+                    <i class="fas fa-tachometer-alt fa-2x" style="color: red;"></i>
+                    <a href="../dashboard.html" style="color: white;">Dashboard</a>
+                </li>
+                <li class="active">
+                    <i class="fas fa-book fa-2x" style="color: red;"></i>
+                    <a href="../home.html" style="color: white;">Courses</a>
+                </li>
+                <li>
+                    <i class="fas fa-calendar fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Calendar</a>
+                </li>
+                <li>
+                    <i class="fas fa-inbox fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Inbox</a>
+                </li>
+                <li>
+                    <i class="fas fa-history fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">History</a>
+                </li>
+                <li>
+                    <i class="fas fa-chalkboard fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Studio</a>
+                </li>
+                <li>
+                    <i class="fas fa-comments fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Comments</a>
+                </li>
+                <li>
+                    <i class="fas fa-question-circle fa-2x" style="color: red;"></i>
+                    <a href="#" style="color: white;">Help</a>
+                </li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </div>
 
-            <!-- Second Column: Course Navigation -->
-            <td style="width: 25%; vertical-align: top;">
-                <h2>Course Menu</h2>
-                <ul>
-                    <li><a href="../home.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="index.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="../grades.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="../courses/index.html">Settings</a></li>
-                    <!-- Add more navigation links as needed -->
-                </ul>
-            </td>
+        <div class="course-navigation">
+            <ul class="list-unstyled">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li class="active2"><a href="index.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="../grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="../courses/index.html">Settings</a></li>
+            </ul>
+        </div>
 
-            <td style="width: 25%; vertical-align: top;">
-                <select>
+        <div class="course-content">
+            <div class="col-md-12">
+                <select class="form-control form-control-sm">
                     <option value="edit">Edit</option>
                     <option value="speedGrader" selected>Speed Grader</option>
                     <option value="duplicate">Duplicate</option>
@@ -63,110 +89,153 @@
                     <option value="shareToCommons">Share to Commons...</option>
                 </select>
                 <h3>Assignment Name</h3>
-                <input type="text" placeholder="A1-ENV + HTML" value="A1-ENV + HTML">
+                <input type="text" class="form-control" placeholder="A1-ENV + HTML" value="A1-ENV + HTML">
                 <br />
                 <br />
-
                 <form id="textarea">
-                    <textarea cols="15" rows="5">This is the assigment description.</textarea>
+                    <textarea class="form-control" cols="15" rows="5">This is the assignment description.</textarea>
                 </form>
-
-                <br />Points<br />
-                <input type="number" placeholder="100" value="100">
                 <br />
                 <br />
-
-                Assigment Group<br />
-                <select>
-                    <option value="assignments" selected>Assignments</option>
-                    <option value="option2">option2/option>
-                    <option value="option3">option3/option>
-                </select>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-inline">
+                            <label for="points">Points: </label>
+                            <input type="number" class="form-control" id="points" placeholder="100" value="100">
+                        </div>
+                    </div>
+                </div>
                 <br />
                 <br />
-
-                Display Grade as<br />
-                <select>
-                    <option value="percentage" selected>Percentage</option>
-                    <option value="option2">option2/option>
-                    <option value="option3">option3/option>
-                </select>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-inline">
+                            <label for="assignmentGroup">Assignment Group: </label>
+                            <select class="form-control form-control-sm" id="assignmentGroup">
+                                <option value="assignments" selected>Assignments</option>
+                                <option value="option2">option2</option>
+                                <option value="option3">option3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
                 <br />
                 <br />
-
-                Submission type<br />
-                <select>
-                    <option value="online" selected>Online</option>
-                    <option value="option2">option2/option>
-                    <option value="option3">option3/option>
-                </select>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-inline">
+                            <label for="displayGrade">Display Grade as: </label>
+                            <select class="form-control form-control-sm" id="displayGrade">
+                                <option value="percentage" selected>Percentage</option>
+                                <option value="option2">option2</option>
+                                <option value="option3">option3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
                 <br />
                 <br />
-
-                Online Entry option<br />
-                <input type="checkbox" name="online-entry-options" value="textEntry"> Text Entry <br />
-                <input type="checkbox" name="online-entry-options" value="website"> Website <br />
-                <input type="checkbox" name="online-entry-options" value="mediaRecordigns"> Media Recordings <br />
-                <input type="checkbox" name="online-entry-options" value="studentAnnotations"> Student Annotations <br />
-                <input type="checkbox" name="online-entry-options" value="fileUpload"> File Uploads <br />
+                <fieldset style="border: 2px solid black; padding: 10px;">
+                    <legend>Submission Details</legend>
+                    <br />
+                    <br />
+                    Submission type<br />
+                    <select class="form-control form-control-sm">
+                        <option value="online" selected>Online</option>
+                        <option value="option2">option2</option>
+                        <option value="option3">option3</option>
+                    </select>
+                    <br />
+                    <br />
+                    Online Entry option<br />
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="online-entry-options" value="textEntry">
+                        <label class="form-check-label">Text Entry</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="online-entry-options" value="website">
+                        <label class="form-check-label">Website</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="online-entry-options" value="mediaRecordings">
+                        <label class="form-check-label">Media Recordings</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="online-entry-options" value="studentAnnotations">
+                        <label class="form-check-label">Student Annotations</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="online-entry-options" value="fileUpload">
+                        <label class="form-check-label">File Uploads</label>
+                    </div>
+                </fieldset>
                 <br />
                 <br />
-
                 Submission Attempts<br />
-                <select>
+                <select class="form-control form-control-sm">
                     <option value="unlimited" selected>Unlimited</option>
-                    <option value="option2">option2/option>
-                    <option value="option3">option3/option>
+                    <option value="option2">option2</option>
+                    <option value="option3">option3</option>
                 </select>
                 <br />
                 <br />
-
                 Plagiarism Review<br />
-                <select>
+                <select class="form-control form-control-sm">
                     <option value="None" selected>None</option>
-                    <option value="option2">option2/option>
-                    <option value="option3">option3/option>
+                    <option value="option2">option2</option>
+                    <option value="option3">option3</option>
                 </select>
                 <br />
                 <br />
-
                 Group Assignment<br />
-                <input type="checkbox" name="group_assignment" value="group_yes"> This is a group assignments <br />
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="group_assignment" value="group_yes">
+                    <label class="form-check-label">This is a group assignment</label>
+                </div>
                 <br />
                 <br />
-
                 Peer reviews<br />
-                <input type="checkbox" name="peer_reviews" value="peer_reviews_yes"> Require Peer reviews <br />
+                <div class="form-check form-control-sm">
+                    <input class="form-check-input" type="checkbox" name="peer_reviews" value="peer_reviews_yes">
+                    <label class="form-check-label">Require Peer reviews</label>
+                </div>
                 <br />
                 <br />
 
-                Assign<br />
-                Assign to<br />
-                <input type="text" placeholder="Everyone" value="Everyone">
-                <br />
-                <br />
+                <fieldset style="border: 2px solid #000; padding: 10px;">
+                    <legend>Assignment Details</legend>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="assign">Assign</label>
+                            <input type="text" class="form-control" id="assign" placeholder="Everyone" value="Everyone">
+                        </div>
+                        <div class="form-group">
+                            <label for="assignTo">Assign to</label>
+                            <input type="text" class="form-control" id="assignTo">
+                        </div>
+                    </div>
 
-                Due<br />
-                <input type="date" placeholder=""YYYY-MM-DD" value="2023-01-01" />
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="due">Due</label>
+                            <input type="date" class="form-control" id="due" placeholder="MM/DD/YYYY" value="2023-01-01">
+                        </div>
+                        <div class="form-group">
+                            <label for="availableFrom">Available from</label>
+                            <input type="date" class="form-control" id="availableFrom" placeholder="MM/DD/YYYY" value="2023-01-01">
+                        </div>
+                        <div class="form-group">
+                            <label for="until">Until</label>
+                            <input type="date" class="form-control" id="until" placeholder="MM/DD/YYYY" value="2023-01-01">
+                        </div>
+                    </div>
+                </fieldset>
                 <br />
                 <br />
-
-                Available from<br />
-                <input type="date" placeholder=""YYYY-MM-DD" value="2023-01-01" />
-                <br />
-                <br />
-
-                Untill<br />
-                <input type="date" placeholder=""YYYY-MM-DD" value="2023-01-01" />
-                <br />
-                <br />
-
-                <button>Cancel</button>
-                <button>Save</button>
-
-            </td>
-        </tr>
-        </table>
-    </body>
+                <button class="btn btn-primary">Cancel</button>
+                <button class="btn btn-success">Save</button>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
-

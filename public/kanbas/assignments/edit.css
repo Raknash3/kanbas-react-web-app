@@ -1,0 +1,187 @@
+/* General Styling */
+/* ---------------------------------- */
+/* Set a white background for the body */
+.black-background {
+    background-color: white;
+}
+
+/* Box-sizing and padding for course sections */
+.course-navigation, .course-content {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* Set full height and width for specified elements */
+body, html, .sidebar, .course-navigation, .course-content {
+    height: 100%;
+    width: 100%;
+}
+
+/* Provide some space between the top of the page and course sections */
+.course-navigation, .course-content {
+    margin-top: 80px; /* Adjust the value as needed */
+}
+
+/* Kanbas Navigation Sidebar */
+.sidebar, .course-navigation, .course-content, .course-status {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* Set 100% height for all container elements */
+body, html, .container, .sidebar, .course-navigation, .course-content, .course-status {
+    height: 100%;
+    width: 100%;
+}
+
+.course-navigation, .course-content {
+    margin-top: 80px; /* Adjust the value as needed */
+}
+
+
+/* Reset default margins and paddings */
+body, html {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Flexbox container */
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clearfix for float elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Grid Layout */
+/* ---------------------------------- */
+/* Create a 3-column grid layout with a 10px gap */
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 70%; /* Adjust as needed */
+    grid-gap: 10px; /* Adjust the gap between columns as needed */
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: black;
+    color: white;
+    width: 84px;
+    height: 100%;
+    text-align: center;
+    margin-left: 0;
+    position: fixed;
+}
+
+/* Course Navigation styles */
+.course-navigation {
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+/* Adjust the margin */
+.course-navigation {
+    margin-left: 100px; /* Adjust as needed */
+}
+
+    .course-navigation ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .course-navigation a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .course-navigation li {
+        margin-bottom: 10px;
+    }
+
+    .course-navigation ul li.active2 a {
+        color: black;
+        border: 1px solid black;
+        padding: 3px;
+    }
+
+/* Course Content styles */
+/* ---------------------------------- */
+.course-content {
+    /* Add course content styles here */
+}
+
+
+/* Additional Styles */
+/* ---------------------------------- */
+
+/* Style for the college emblem image */
+.college-emblem {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Remove bullet points and adjust margin for navigation list */
+.navigation-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .navigation-list li {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .navigation-list a {
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        font-size: 11px;
+    }
+
+    .navigation-list i {
+        font-size: 23px;
+    }
+
+    .navigation-list li.active {
+        background-color: white !important;
+    }
+
+        .navigation-list li.active a {
+            color: black !important;
+        }
+
+.list-group-item.list-group-item-secondary a.text-danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 5px;
+    color: black !important;
+    text-decoration: none;
+}
+
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
