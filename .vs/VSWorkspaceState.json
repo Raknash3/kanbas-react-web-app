@@ -3,9 +3,8 @@
     "",
     "\\public",
     "\\public\\kanbas",
-    "\\public\\kanbas\\assignments",
-    "\\public\\kanbas\\profile"
+    "\\public\\kanbas\\assignments"
   ],
-  "SelectedNode": "\\public\\kanbas\\profile\\edit.html",
+  "SelectedNode": "\\public\\kanbas\\assignments\\index.html",
   "PreviewInSolutionExplorer": false
 }
