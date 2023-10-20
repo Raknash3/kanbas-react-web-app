@@ -1,0 +1,60 @@
+
+/* index.css */
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.module-list-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.button-column {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-button {
+    background-color: #f2f2f2; /* Whitish grey */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.button-icon {
+    margin-right: 10px;
+}
+
+.to-do-header {
+    border-bottom: 2px solid #000; /* Black line, adjust color as needed */
+    margin-bottom: 10px; /* Add some space below the header */
+    margin-right: 10px;
+}
+
+.to-do-item {
+    background-color: #fff; /* White background */
+    border: 2px solid #000; /* Black border */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.to-do-content {
+    /* Add any additional styles for the content */
+    color: #000; /* Black text */
+}
+
+.to-do-title {
+    color: red; /* Red text */
+}

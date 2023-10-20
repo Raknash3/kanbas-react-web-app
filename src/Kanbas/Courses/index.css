@@ -1,0 +1,65 @@
+/* Courses.css */
+
+.courses-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.menu-icon {
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+}
+
+.course-title {
+    color: red;
+}
+
+.course-name {
+    font-weight: bold;
+}
+
+/* Add styles for the active menu in course header */
+.active-menu {
+    color: red;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+.course-title {
+    border-bottom: 2px solid #000; /* Black line, adjust color as needed */
+}
+
+/* index.css */
+
+.student-view-button {
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-left: 650px;
+    cursor: pointer;
+}
+
+.specs-icon {
+    margin-right: 5px; /* Add some space between the icon and text */
+}
+
+.courses-container {
+    display: flex;
+}
+
+.navigation-container {
+    width: 300px; /* Adjust the width as needed */
+    background-color: white; /* Greyish White */
+}
+
+.content-container {
+    width: 1050px; /* Take up remaining available space */
+    margin-top: 20px;
+}
+
+.courses-header {
+    display: flex;
+    align-items: center;
+}

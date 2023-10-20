@@ -1,0 +1,32 @@
+/* index.css */
+
+/* Add styles for course cards */
+.course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px; /* Add margin to push the cards down */
+}
+
+.course-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+    .course-card h2.course-name {
+        text-decoration: underline;
+    }
+
+.course-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

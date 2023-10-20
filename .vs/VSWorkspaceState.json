@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\public\\kanbas",
-    "\\public\\kanbas\\assignments"
+    "\\src",
+    "\\src\\Kanbas",
+    "\\src\\Kanbas\\Courses",
+    "\\src\\Kanbas\\Courses\\Assignments\\AssignmentEditor",
+    "\\src\\Labs\\a3"
   ],
-  "SelectedNode": "\\public\\kanbas\\assignments\\index.html",
+  "SelectedNode": "\\src\\Kanbas\\Courses\\index.js",
   "PreviewInSolutionExplorer": false
 }

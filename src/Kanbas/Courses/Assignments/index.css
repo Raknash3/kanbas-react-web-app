@@ -1,0 +1,122 @@
+.button-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid #ccc; /* Add this line to create a border under the buttons */
+    padding-bottom: 10px; /* Adjust as needed */
+}
+
+.search-bar {
+    padding: 5px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.button {
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button-icon {
+    margin-right: 5px;
+}
+
+.options-button {
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+
+.list-group-item {
+    margin-right: 10px;
+}
+
+
+.assignment-list-container {
+    background-color: #f2f2f2; /* Greyish white */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Add some space between the list and the next element */
+}
+
+.assignment-list-title {
+    font-size: 1.5rem; /* Adjust as needed */
+    font-weight: bold;
+    color: black; /* Or your preferred text color */
+    margin-bottom: 10px; /* Add space between title and list */
+}
+
+/* For the list of assignments */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: papayawhip;
+    border-radius: 5px;
+}
+
+.item-left {
+    display: flex;
+    align-items: center;
+}
+
+.item-right {
+    display: flex;
+    align-items: center;
+}
+
+.item-icon {
+    margin-right: 5px; /* Add some space between the icon and text */
+}
+
+.assignment-list-title {
+    margin-bottom: 10px;
+}
+
+.divider-line {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.assignment-list-title {
+    flex-grow: 1; /* Grow to take up available space */
+}
+
+.percentage-capsule {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.right-items {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}

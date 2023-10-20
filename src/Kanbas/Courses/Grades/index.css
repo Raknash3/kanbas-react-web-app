@@ -1,0 +1,76 @@
+.grades-buttons {
+    float: right;
+    /* OR */
+    margin-left: auto;
+}
+.button {
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.button-icon {
+    margin-right: 5px;
+}
+
+.options-button {
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.grades-search {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.search-box {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.search-bar {
+    padding: 5px;
+    width: 550px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f2f2f2; /* Greyish White */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.filter-icon {
+    margin-left: 5px;
+}
+
+.table {
+    width: calc(100% - 20px); /* Adjust the width and margin as needed */
+    margin-right: 20px;
+}
+
+    .table th, .table td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .table th {
+        background-color: #f2f2f2; /* Greyish White */
+    }
+
+    .table tbody tr:nth-child(even) td {
+        background-color: #f9f9f9; /* Alternate row color */
+    }
