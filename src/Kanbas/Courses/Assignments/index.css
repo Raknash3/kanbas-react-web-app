@@ -63,7 +63,7 @@
 .list-group-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Add this line */
     margin-bottom: 10px;
     padding: 10px;
     background-color: papayawhip;
@@ -81,7 +81,8 @@
 }
 
 .item-icon {
-    margin-right: 5px; /* Add some space between the icon and text */
+    margin-right: 10px; /* Add some space between the icon and text */
+    
 }
 
 .assignment-list-title {
@@ -119,4 +120,15 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+}
+
+.item-left {
+    display: inline-flex;
+    align-items: center;
+}
+
+.item-right {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 770px;
 }

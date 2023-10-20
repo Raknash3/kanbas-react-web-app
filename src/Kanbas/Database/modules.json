@@ -1,38 +1,38 @@
 [
   {
     "_id": "M101",
-    "name": "Introduction to Rocket Propulsion",
-    "description": "Basic principles of rocket propulsion and rocket engines.",
+    "name": "Week 0: Introduction to Web development",
+    "description": "Learn to install new libraries and code with HTML",
     "course": "RS101"
   },
   {
     "_id": "M102",
-    "name": "Fuel and Combustion",
-    "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+    "name": "Week 1: Styling with Bootstrap and CSS",
+    "description": "Apply styling over HTML",
     "course": "RS101"
   },
   {
     "_id": "M103",
-    "name": "Nozzle Design",
-    "description": "Principles of rocket nozzle design and performance optimization.",
+    "name": "Week 2: JS and React.js ",
+    "description": "Learn to use React.js for creating SPAs",
     "course": "RS101"
   },
   {
     "_id": "M201",
-    "name": "Fundamentals of Aerodynamics",
-    "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+    "name": "Week 0: Introduction to Applied Statistics",
+    "description": "Learn about various statistical methods used in data mining",
     "course": "RS102"
   },
   {
     "_id": "M202",
-    "name": "Subsonic and Supersonic Flow",
-    "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
+    "name": "Week 1: MBA",
+    "description": "Intro to market Basket analysis and to develope a code for MBA",
     "course": "RS102"
   },
   {
     "_id": "M203",
-    "name": "Aerodynamic Heating",
-    "description": "Study of aerodynamic heating and thermal protection systems.",
+    "name": "Week 2: Clustering algorithms ",
+    "description": "Intro to various clsutering algorithms and hands on practice",
     "course": "RS102"
   },
   {

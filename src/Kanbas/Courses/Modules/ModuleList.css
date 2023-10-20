@@ -73,3 +73,13 @@
 .options-button {
     color: black;
 }
+
+.list-group {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.checkmark-button {
+    color: green; /* Change the color to green */
+}
+

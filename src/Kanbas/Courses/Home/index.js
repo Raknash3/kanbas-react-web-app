@@ -9,7 +9,7 @@ function Home() {
             <div className="module-list-container">
                 <h2>Home</h2>
                 <ModuleList />
-                <h2>Status</h2>
+                
             </div>
             <div className="button-column">
                 <button className="home-button">

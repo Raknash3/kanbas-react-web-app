@@ -21,6 +21,26 @@ function ModuleList() {
                 <button className="module-button options-button"><FontAwesomeIcon icon={faEllipsisV} /></button>
             </div>
             <hr className="divider-line" />
+
+            <ul className="list-group">
+                <li className="module-item module-blue">
+                    <h3>Resources</h3>
+                    <div className="buttons-container">
+                        <button className="button checkmark-button"><FontAwesomeIcon icon={faCheck} style={{ color: 'green' }} /></button>
+                        <button className="button plus-button"><FontAwesomeIcon icon={faPlus} /></button>
+                        <button className="button options-button"><FontAwesomeIcon icon={faEllipsisV} /></button>
+                    </div>
+                </li>
+                <li className="module-item module-green">
+                    <h3>Reading Material</h3>
+                    <div className="buttons-container">
+                        <button className="button checkmark-button"><FontAwesomeIcon icon={faCheck} style={{ color: 'green' }} /></button>
+                        <button className="button plus-button"><FontAwesomeIcon icon={faPlus} /></button>
+                        <button className="button options-button"><FontAwesomeIcon icon={faEllipsisV} /></button>
+                    </div>
+                </li>
+            </ul>
+
             <ul className="list-group">
                 {modules
                     .filter((module) => module.course === courseId)
@@ -29,7 +49,7 @@ function ModuleList() {
                             <h3>{module.name}</h3>
                             <p>{module.description}</p>
                             <div className="buttons-container">
-                                <button className="button checkmark-button"><FontAwesomeIcon icon={faCheck} /></button>
+                                <button className="button checkmark-button"><FontAwesomeIcon icon={faCheck} style={{ color: 'green' }} /></button>
                                 <button className="button plus-button"><FontAwesomeIcon icon={faPlus} /></button>
                                 <button className="button options-button"><FontAwesomeIcon icon={faEllipsisV} /></button>
                             </div>

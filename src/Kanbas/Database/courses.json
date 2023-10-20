@@ -1,34 +1,38 @@
 [
+
   {
     "_id": "RS101",
-    "name": "Rocket Propulsion",
-    "number": "RS4550",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15",
-    "image":"./course.jpeg"
+    "name": "Unsupervised Machine Learning and Data Mining",
+    "number": "DS5230",
+    "startDate": "2023-09-10",
+    "endDate": "2023-12-15",
+    "image": "./course.jpeg"
   },
   {
     "_id": "RS102",
-    "name": "Aerodynamics",
-    "number": "RS4560",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15",
+    "name": "Web development",
+    "number": "CS5610",
+    "startDate": "2023-09-10",
+    "endDate": "2023-12-15",
     "image": "./course.jpeg"
   },
+
   {
     "_id": "RS103",
-    "name": "Spacecraft Design",
-    "number": "RS4570",
+    "name": "Programming Design paradigm",
+    "number": "CS5010",
     "startDate": "2023-01-10",
-    "endDate": "2023-05-15",
+    "endDate": "2023-04-15",
     "image": "./course.jpeg"
   },
+
   {
     "_id": "RS103",
-    "name": "Spacecraft Design",
-    "number": "RS4570",
+    "name": "Lab Programming Design paradigm",
+    "number": "CS5011",
     "startDate": "2023-01-10",
-    "endDate": "2023-05-15",
+    "endDate": "2023-04-15",
     "image": "./course.jpeg"
   }
 ]
+
