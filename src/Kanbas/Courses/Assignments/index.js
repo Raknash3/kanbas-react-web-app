@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

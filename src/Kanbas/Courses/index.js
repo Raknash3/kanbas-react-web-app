@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import db from "../../Kanbas/Database";
+import React from 'react';
 import { Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -11,11 +10,11 @@ import { faGlasses } from '@fortawesome/free-solid-svg-icons';
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+import { useState } from "react";
 
-
-function Courses() {
+function Courses({ courses }) {
     const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
+    const course = courses.find((course) => course._id === courseId);
     const location = useLocation();
     const [activeMenu, setActiveMenu] = useState("");
 
@@ -26,7 +25,7 @@ function Courses() {
             <div className="courses-header">
                 <FontAwesomeIcon icon={faBars} className="menu-icon" />
                 <h3 className="course-title">
-                    Course:  <span className="course-name">{course.name}</span>
+                    Course:  <span className="course-name">{course ? course.name : 'Course Title'}</span>
                     {activeMenuName && <span className="active-menu">{' > ' + activeMenuName}</span>}
                 </h3>
                 <button className="student-view-button">

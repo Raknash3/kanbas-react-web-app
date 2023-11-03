@@ -19,6 +19,9 @@
     color: black;
     flex-basis: calc(25% - 20px);
     margin-bottom: 20px;
+    position: relative; /* Add this line */
+    display: flex; /* Add this line */
+    flex-direction: column; /* Add this line */
 }
 
     .course-card h2.course-name {
@@ -30,3 +33,69 @@
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
+/* Add styles for the Add Course button */
+.add-course-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+    .add-course-button span {
+        margin-right: 5px;
+    }
+
+/* Additional styles for header and published courses */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.published-courses {
+    margin: 0;
+}
+
+
+.delete-course-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; 
+}
+
+    .delete-course-button span {
+        font-size: 20px;
+    }
+
+.edit-course-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Adjusted padding */
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    max-width: fit-content;
+    margin-top: auto;
+    bottom: 10px;
+}
+    .edit-course-button span {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
+    .edit-course-button i {
+        font-size: 16px;
+    }
