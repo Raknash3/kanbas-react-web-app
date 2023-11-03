@@ -79,6 +79,7 @@ function Kanbas() {
                         />} />
 
                         <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
+                        <Route path="Courses/*" element={<h1>Please click on a course from Dashboard</h1>} />
                     </Routes>
                 </div>
             </div>
