@@ -37,19 +37,23 @@ function Assignments() {
                     </div>
                 </div>
                 {courseAssignments.map((assignment) => (
-                    <div key={assignment._id} className="list-group-item">
+                    <Link
+                        key={assignment._id}
+                        to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+                        className="list-group-item"
+                    >
                         <div className="item-left">
                             <FontAwesomeIcon icon={faBookReader} className="item-icon" />
                             {assignment.title}
                         </div>
                         <div className="item-right">
-                            <FontAwesomeIcon icon={faCheck} className="item-icon" />
                             <button onClick={() => handleDelete(assignment._id)} className="delete-button">
                                 Delete
                             </button>
-                            
+                            <FontAwesomeIcon icon={faCheck} className="item-icon" />
+                           
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
