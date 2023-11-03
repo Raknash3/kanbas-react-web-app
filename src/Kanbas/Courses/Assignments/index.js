@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,9 +8,14 @@ import "./index.css";
 
 function Assignments() {
     const { courseId } = useParams();
-    const assignments = db.assignments;
+    const [assignments, setAssignments] = useState(db.assignments);
     const courseAssignments = assignments.filter(
         (assignment) => assignment.course === courseId);
+
+    const handleDelete = (assignmentId) => {
+        setAssignments(assignments.filter(assignment => assignment._id !== assignmentId));
+    };
+
     return (
         <div>
             <h2>Assignments for course {courseId}</h2>
@@ -32,20 +37,19 @@ function Assignments() {
                     </div>
                 </div>
                 {courseAssignments.map((assignment) => (
-                    <Link
-                        key={assignment._id}
-                        to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-                        className="list-group-item"
-                    >
+                    <div key={assignment._id} className="list-group-item">
                         <div className="item-left">
                             <FontAwesomeIcon icon={faBookReader} className="item-icon" />
                             {assignment.title}
                         </div>
                         <div className="item-right">
                             <FontAwesomeIcon icon={faCheck} className="item-icon" />
-                            <FontAwesomeIcon icon={faEllipsisV} className="item-icon" />
+                            <button onClick={() => handleDelete(assignment._id)} className="delete-button">
+                                Delete
+                            </button>
+                            
                         </div>
-                    </Link>
+                    </div>
                 ))}
             </div>
         </div>
