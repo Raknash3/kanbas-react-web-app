@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from "react";
 import { Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -10,11 +11,24 @@ import { faGlasses } from '@fortawesome/free-solid-svg-icons';
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
-import { useState } from "react";
+import axios from "axios";
+
 
 function Courses({ courses }) {
     const { courseId } = useParams();
-    const course = courses.find((course) => course._id === courseId);
+    const URL = "http://localhost:4000/api/courses";
+    const [course, setCourse] = useState({});
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
     const location = useLocation();
     const [activeMenu, setActiveMenu] = useState("");
 

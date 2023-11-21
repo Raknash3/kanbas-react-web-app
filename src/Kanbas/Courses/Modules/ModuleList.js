@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -6,17 +6,45 @@ import {
     deleteModule,
     updateModule,
     setModule,
+    setModules,
 } from "./modulesReducer";
 import './ModuleList.css'; // Import the CSS file
 
 import { faCheck, faTimes, faEllipsisV, faPlus, faEdit } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as client from "./client";
 
 function ModuleList() {
+
+    const dispatch = useDispatch();
     const { courseId } = useParams();
+
+    useEffect(() => {
+        client.findModulesForCourse(courseId)
+            .then((modules) =>
+                dispatch(setModules(modules))
+            );
+    }, [courseId]);
+
     const modules = useSelector((state) => state.modulesReducer.modules);
     const module = useSelector((state) => state.modulesReducer.module);
-    const dispatch = useDispatch();
+
+    const handleAddModule = () => {
+        client.createModule(courseId, module).then((module) => {
+            dispatch(addModule(module));
+        });
+    };
+
+    const handleUpdateModule = async () => {
+        const status = await client.updateModule(module);
+        dispatch(updateModule(module));
+    };
+
+    const handleDeleteModule = (moduleId) => {
+        client.deleteModule(moduleId).then((status) => {
+            dispatch(deleteModule(moduleId));
+        });
+    };
 
 
     return (
@@ -51,11 +79,11 @@ function ModuleList() {
                         
                     />
                 </div>
-                <button onClick={() => dispatch(addModule({ ...module, course: courseId }))} className="button2">
+                <button onClick={handleAddModule} className="button2">
                     <span className="button-icon">+</span>
                     Add Module
                 </button>
-                <button onClick={() => dispatch(updateModule(module))} className="button2">
+                <button onClick={handleUpdateModule} className="button2">
                     <FontAwesomeIcon icon={faCheck} style={{ marginRight: '5px' }} /> Update
                 </button>
 
@@ -96,7 +124,7 @@ function ModuleList() {
                                 <button className="button checkmark-button">
                                     <FontAwesomeIcon icon={faCheck} style={{ color: 'green' }} />
                                 </button>
-                                <button onClick={() => dispatch(deleteModule(module._id))} 
+                                <button onClick={() => handleDeleteModule(module._id)} 
                                     className="delete-button"
                                 >
                                     <FontAwesomeIcon icon={faTimes} /> Delete
