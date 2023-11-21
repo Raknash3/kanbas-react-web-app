@@ -1,8 +1,15 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
-import { deleteAssignment, addAssignment, selectAssignment, updateAssignment } from "../assignmentsReducer";
+import {
+    deleteAssignment,
+    addAssignment,
+    selectAssignment,
+    updateAssignment,
+    setAssignments, // Add this import
+} from "../assignmentsReducer";
 import { useSelector, useDispatch } from "react-redux";
+import * as client from "../client";
 
 
 function AssignmentEditor() {
@@ -11,23 +18,39 @@ function AssignmentEditor() {
     //   (assignment) => assignment._id === assignmentId);
 
 
+
     const { courseId } = useParams();
     const assignments = useSelector((state) => state.assignmentsReducer.assignments);
     const assignment = useSelector((state) => state.assignmentsReducer.assignment);
     console.log("first time: " + JSON.stringify(assignment))
     const dispatch = useDispatch();
     const navigate = useNavigate();
+
+    const handleUpdateAssignments = async () => {
+        const status = await client.updateAssignment(assignment);
+        dispatch(updateAssignment(assignment));
+    };
+
+    const handleAddAssignments = () => {
+        client.createAssignment(courseId, assignment).then((assign) => {
+            dispatch(addAssignment(assign));
+        });
+    };
+
     const handleSave = () => {
         console.log("Actually saving assignment TBD in later assignments");
 
         console.log("hahdsja: " + JSON.stringify(assignment))
 
         if (assignment._id) {
-            dispatch(updateAssignment(assignment))
+            //dispatch(updateAssignment(assignment))
+            handleUpdateAssignments()
         }
         else {
-            dispatch(addAssignment({ ...assignment, course: courseId }))
+            // dispatch(addAssignment({ ...assignment, course: courseId }))
+            handleAddAssignments()
         }
+        console.log("After Adding assignment" + JSON.stringify(assignment))
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
     return (

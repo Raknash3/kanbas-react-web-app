@@ -17,6 +17,12 @@ import * as client from "./client";
 function Assignments() {
 
     const { courseId } = useParams();
+    useEffect(() => {
+        client.findAssignmentsForCourse(courseId)
+            .then((assignments) =>
+                dispatch(setAssignments(assignments))
+            );
+    }, [courseId]);
 
     
     
@@ -30,16 +36,9 @@ function Assignments() {
         });
     };
 
-    const handleUpdateAssignments = async () => {
-        const status = await client.updateAssignment(assignment);
-        dispatch(updateAssignment(assignment));
-    };
+    
 
-    const handleAddAssignments = () => {
-        client.createAssignment(courseId, assignment).then((assignment) => {
-            dispatch(addAssignment(assignment));
-        });
-    };
+    
 
 
     return (
@@ -52,7 +51,7 @@ function Assignments() {
                     key={assignment._id}
                     to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
                     className="no-underline">
-                    <button style={{ float: "right" }} type="button" class="btn btn-success" onClick={handleAddAssignments}>Assignment +</button>
+                    <button style={{ float: "right" }} type="button" class="btn btn-success" onClick={() => dispatch(selectAssignment({ title: "New Assignment", course: "New Course", dueDate: "", fromDate: "", untilDate: "" }))}>Assignment +</button>
                 </Link>
                 <select style={{ float: "right" }} class="btn">
                     <option selected value="EAD">
