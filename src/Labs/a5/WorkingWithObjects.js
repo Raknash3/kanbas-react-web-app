@@ -54,6 +54,7 @@ function WorkingWithObjects() {
             </a>
 
             <h4>Modifying Properties</h4>
+
             <a
                 href={`${URL}/title/${assignment.title}`}
                 className="btn btn-primary me-2 float-end"
@@ -69,24 +70,12 @@ function WorkingWithObjects() {
                 className="form-control mb-2 w-75"
                 type="text" />
 
-
-            <button onClick={updateTitle}
-                className="w-100 btn btn-primary mb-2">
-                Update Title to: {assignment.title}
-            </button>
-            <button onClick={fetchAssignment}
-                className="w-100 btn btn-danger mb-2">
-                Fetch Assignment
-            </button>
-
-
             <a
                 href={`${URL}/score/${assignment.score}`}
                 className="btn btn-primary me-2 float-end"
             >
                 Update score
             </a>
-
             <input
                 onChange={(e) => setAssignment({
                     ...assignment,
@@ -102,15 +91,53 @@ function WorkingWithObjects() {
             >
                 Update Status
             </a>
+            <input
+                type="checkbox"
+                checked={assignment.completed}
+                onChange={(e) => setAssignment({
+                    ...assignment,
+                    completed: e.target.checked,
+                })}
+            />
+
+            <h4>Modifying Properties from an HTTP server</h4>
 
             <input
                 onChange={(e) => setAssignment({
                     ...assignment,
-                    completed: e.target.value
+                    title: e.target.value
                 })}
-                value={assignment.completed}
+                value={assignment.title}
+                className="form-control mb-2 w-75"
+                type="text" />
+            <button onClick={updateTitle}
+                className="w-100 btn btn-primary mb-2">
+                Update Title to: {assignment.title}
+            </button>
+
+            <h5> Fetch assignment details</h5>
+            Title:
+            <input
+                onChange={(e) => setAssignment({
+                    ...assignment,
+                    title: e.target.value
+                })}
+                value={assignment.title}
+                className="form-control mb-2 w-75"
+                type="text" />
+             Score:
+            <input
+                onChange={(e) => setAssignment({
+                    ...assignment,
+                    score: e.target.value
+                })}
+                value={assignment.score}
                 className="form-control mb-2 w-75"
                 type="int" />
+            <button onClick={fetchAssignment}
+                className="w-100 btn btn-danger mb-2">
+                Fetch Assignment
+            </button>
 
         </div>
     );
