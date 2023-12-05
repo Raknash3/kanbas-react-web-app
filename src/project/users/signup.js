@@ -11,6 +11,7 @@ function Signup() {
     const navigate = useNavigate();
 
     const signup = async () => {
+        console.log(process.env)
         try {
             await client.signup(credentials);
             navigate("/project/account");
